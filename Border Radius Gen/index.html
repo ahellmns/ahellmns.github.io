@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Radius Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box"></div>
+    <div class="controls">
+      <label for="top-left">Oben Links:</label>
+      <input type="range" id="top-left" min="0" max="100" value="0">
+      <label for="top-right">Oben Rechts:</label>
+      <input type="range" id="top-right" min="0" max="100" value="0">
+      <label for="bottom-right">Unten Rechts:</label>
+      <input type="range" id="bottom-right" min="0" max="100" value="0">
+      <label for="bottom-left">Unten Links:</label>
+      <input type="range" id="bottom-left" min="0" max="100" value="0">
+    </div>
+  </div>
+
+  <!-- Fügen Sie diesen Abschnitt in den Container unter den vorhandenen Steuerelementen hinzu -->
+<div class="preview">
+    <p id="border-radius-output">border-radius: 0px 0px 0px 0px;</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
